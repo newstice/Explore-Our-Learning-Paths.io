@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1a1a2e;
+}
+ 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    height: 64px;
+    border-bottom: 1px solid #f0f0f0;
+}
+ 
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+ 
+.logo_ul {
+    min-width: 120px;
+}
+ 
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+.logo span {
+    color: #4f8ef7;
+}
+ 
+.header_nav {
+    gap: 36px;
+}
+ 
+.header_nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+ 
+.header_nav a:hover {
+    color: #4f8ef7;
+}
+ 
+.nav_buttons {
+    gap: 12px;
+}
+ 
+.btn_login {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #333;
+    padding: 8px 12px;
+}
+ 
+.btn_signup {
+    background: #1a1a2e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+ 
+.btn_signup:hover {
+    background: #2d2d4e;
+}
+ 
+.hero {
+    background-color: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 96px 24px;
+    line-height: normal;
+}
+ 
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.2;
+}
+ 
+.hero p {
+    font-size: 1.05rem;
+    color: #b0b8d4;
+    max-width: 520px;
+    margin: 0 auto 36px;
+    line-height: 1.6;
+}
+ 
+.hero_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 0;
+}
+ 
+.btn_get_started {
+    background: #fff;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+ 
+.btn_view {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+ 
+.btn_get_started:hover { background: #f0f0f0; }
+.btn_view:hover { border-color: #fff; }
+ 
+.cards_section {
+    text-align: center;
+    margin-top: 60px;
+    padding: 0 48px 80px;
+}
+ 
+.cards_section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+ 
+.cards_subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+ 
+.cards {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto 0;
+    justify-content: center;
+}
+ 
+.card {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 28px;
+    text-align: left;
+    flex: 1;
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+ 
+.card::before {
+    content: '';
+    display: block;
+    height: 4px;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+}
+ 
+.card_red::before  { background: #e05252; }
+.card_blue::before { background: #4f8ef7; }
+.card_green::before{ background: #3dba78; }
+ 
+.card_icon {
+    font-size: 1.8rem;
+    margin-bottom: 14px;
+}
+ 
+.card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+ 
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+ 
+.explore_link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+.red  { color: #e05252; }
+.blue { color: #4f8ef7; }
+.green{ color: #3dba78; }
+ 
+footer {
+    border-top: 1px solid #eee;
+    padding: 20px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #888;
+    font-size: 0.85rem;
+}
+ 
+.footer_icons {
+    display: flex;
+    gap: 12px;
+}
+ 
+.footer_icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
